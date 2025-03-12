@@ -1,0 +1,12 @@
+<div class="p-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    @for(product of products; track product.id) {
+    <div class="p-4 rounded-lg shadow-lg w-full">
+      <app-product-card [product]="product" (productDeleted)="onProductDeleted($event)"></app-product-card>
+    </div>
+    }
+    @empty {
+    <p class="text-white text-2xl col-span-full text-center">Nenhum produto encontrado.</p>
+    }
+  </div>
+</div>

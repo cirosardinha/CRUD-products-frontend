@@ -1,27 +1,58 @@
-# Frontend
+# CRUD Products Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+A product management application built with Angular and Tailwind CSS.
 
-## Development server
+## Technologies
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Angular 17**
+- **Tailwind CSS**
+- **RxJS**
+- **Angular Router**
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To install the dependencies, run:
 
-## Build
+```bash
+npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Running
 
-## Running unit tests
+To start the development server, use:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+ng serve
+```
 
-## Running end-to-end tests
+The application will run at:  
+**http://localhost:4200**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Features
 
-## Further help
+- View a list of all products
+- Create new products
+- Update existing products
+- Delete products
+- Responsive design
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Project Structure
+
+- **`src/app/components`**: Angular components
+- **`src/app/services`**: Services for API communication
+- **`src/models`**: Data models
+- **`src/environments`**: Environment configuration
+
+## API Integration
+
+This frontend connects to a backend API running at **http://localhost:3333** with the following endpoints:
+
+| Method | Endpoint        | Description          |
+|--------|-----------------|----------------------|
+| GET    | `/products`     | List all products   |
+| GET    | `/products/:id` | Get a specific product |
+| POST   | `/products`     | Create a product    |
+| PUT    | `/products/:id` | Update a product    |
+| DELETE | `/products/:id` | Delete a product    |
+
+
